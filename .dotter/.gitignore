@@ -1,0 +1,6 @@
+# Per-machine configuration
+local.toml
+
+# Configuration cache
+cache
+cache.toml

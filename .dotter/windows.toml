@@ -1,0 +1,3 @@
+[vim.files]
+"vim/vimrc" = "~/_vimrc"
+"vim/lettepa.vim" = "~/vimfiles/colors/lettepa.vim"

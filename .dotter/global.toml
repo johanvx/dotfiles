@@ -1,0 +1,6 @@
+[settings]
+default_target_type = "symbolic"
+
+[vim.files]
+"vim/vimrc" = "~/.vimrc"
+"vim/lettepa.vim" = "~/.vim/colors/lettepa.vim"
