@@ -201,11 +201,20 @@ nnoremap ]w <C-w>w
 " Color scheme {{{
 colorscheme lettepa
 
+nnoremap <silent> <LocalLeader>b :call ToggleBackground()<CR>
 nnoremap <silent> <LocalLeader><LocalLeader> :call InspectKeyword()<CR>
 
+function! ToggleBackground()
+    if (&background == 'dark')
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+
 function! InspectKeyword()
-	let s = synID(line('.'), col('.'), 1)
-	echo synIDattr(s, 'name') . ' -> ' . synIDattr(synIDtrans(s), 'name')
+    let s = synID(line('.'), col('.'), 1)
+    echo synIDattr(s, 'name') . ' -> ' . synIDattr(synIDtrans(s), 'name')
 endfunction
 " }}}
 
