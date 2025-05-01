@@ -118,7 +118,7 @@ call s:h('String', s:blue)
 call s:h('Character', s:red)
 call s:h('Number', s:blue)
 call s:h('Boolean', s:blue)
-call s:h('Float', s:red)
+call s:h('Float', s:blue)
 
 call s:h('Identifier', s:green)
 call s:h('Function', s:green)
