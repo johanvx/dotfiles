@@ -74,8 +74,8 @@ set wildoptions=fuzzy,pum
 set nowrap
 
 " GUI
-set guifont=MonaspiceNe\ Nerd\ Font:h24
-set guifontwide=Noto\ Sans\ CJK\ SC:h24
+set guifont=Departure\ Mono:h12
+set guifontwide=Unifont:h12
 
 " Edit
 set autochdir
