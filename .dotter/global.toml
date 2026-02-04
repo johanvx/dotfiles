@@ -2,5 +2,5 @@
 default_target_type = "symbolic"
 
 [vim.files]
-"vim/vimrc" = "~/.vimrc"
-"vim/lettepa.vim" = "~/.vim/colors/lettepa.vim"
+"vim/.vimrc" = "~/.vimrc"
+"vim/.vim/colors/lettepa.vim" = "~/.vim/colors/lettepa.vim"

@@ -73,10 +73,6 @@ set wildmenu
 set wildoptions=fuzzy,pum
 set nowrap
 
-" GUI
-set guifont=Departure\ Mono:h12
-set guifontwide=Unifont:h12
-
 " Edit
 set autochdir
 set autowrite
@@ -156,22 +152,9 @@ noremap! <C-d> <Del>
 " Delete shift width at the start of the line (paired with <C-t>)
 inoremap <C-g> <C-d>
 
-
-" Increment/decrement
-nnoremap + <C-a>
-nnoremap - <C-x>
-
 " Jumps
 nnoremap [j <C-o>
 nnoremap ]j <C-i>
-
-" Select all
-nnoremap <C-a> ggVG
-
-" Suspend (use `fg` to bring the session back)
-inoremap <C-s> <Esc>:suspend<CR>
-vnoremap <C-s> <Esc>:suspend<CR>
-nnoremap <C-s> :suspend<CR>
 
 " Shifts
 xnoremap < <gv
