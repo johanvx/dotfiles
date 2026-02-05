@@ -33,37 +33,37 @@ set splitright
 " Statusline {{{
 " Mode table
 let mode_table = {
-            \"n":       '-- NORMAL --',
+            \"n":       'NORMAL',
             \"no":      'OPERATOR PENDING',
             \"nov":     'OPERATOR PENDING',
             \"noV":     'OPERATOR PENDING',
             \"no\<C-v>": 'OPERATOR PENDING',
-            \"niI":     '-- NORMAL --',
-            \"niR":     '-- NORMAL --',
-            \"niV":     '-- NORMAL --',
-            \"v":       '-- VISUAL --',
+            \"niI":     'NORMAL',
+            \"niR":     'NORMAL',
+            \"niV":     'NORMAL',
+            \"v":       'VISUAL',
             \"V":       'VISUAL LINE',
             \"\<C-v>":   'VISUAL BLOCK',
-            \"s":       '-- SELECT --',
+            \"s":       'SELECT',
             \"S":       'SELECT LINE',
             \"\<C-s>":   'SELECT BLOCK',
-            \"i":       '-- INSERT --',
-            \"ic":      '-- INSERT --',
-            \"ix":      '-- INSERT --',
-            \"R":       '-- REPLACE --',
-            \"Rc":      '-- REPLACE --',
+            \"i":       'INSERT',
+            \"ic":      'INSERT',
+            \"ix":      'INSERT',
+            \"R":       'REPLACE',
+            \"Rc":      'REPLACE',
             \"Rv":      'VIRTUAL REPLACE',
-            \"Rx":      '-- REPLACE --',
-            \"c":       '-- COMMAND --',
-            \"cv":      '-- EX --',
-            \"ce":      '-- EX --',
+            \"Rx":      'REPLACE',
+            \"c":       'COMMAND',
+            \"cv":      'EX',
+            \"ce":      'EX',
             \"r":       'HIT-ENTER',
             \"rm":      'MORE',
             \"r?":      'CONFIRM',
             \"!":       'EXTERNAL COMMAND',
             \"t":       'TERMINAL JOB'
             \}
-set statusline=%<\ %F%(\ %q%)%(\ [%W%H%M%R]%)%=%(%3p%%\ %)%(\ %l:%c\ %)%(\ %{mode_table[mode()]}\ %)%(\ [%{&fenc}%Y]\ %)
+set statusline=%<%(\ %{mode_table[mode()]}\ %)%(\ %F%)%(\ %q%)%(\ [%W%H%M%R]%)%=%(\ [%{&fenc}%Y]\ %)%(\ %3p%%%)%(\ %l:%c\ %)
 " }}}
 
 set switchbuf=usetab
