@@ -4,3 +4,6 @@ default_target_type = "symbolic"
 [vim.files]
 "vim/.vimrc" = "~/.vimrc"
 "vim/.vim/colors/lettepa.vim" = "~/.vim/colors/lettepa.vim"
+
+[zellij.files]
+"zellij/.config/zellij/config.kdl" = "~/.config/zellij/config.kdl"
