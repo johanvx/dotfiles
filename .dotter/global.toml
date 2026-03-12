@@ -7,3 +7,9 @@ default_target_type = "symbolic"
 
 [zellij.files]
 "zellij/.config/zellij/config.kdl" = "~/.config/zellij/config.kdl"
+
+[tmux-remote.files]
+"tmux/remote.tmux.conf" = "~/.tmux.conf"
+
+[tmux-local.files]
+"tmux/local.tmux.conf" = "~/.tmux.conf"

@@ -1,1 +1,1 @@
-# packages = ["vim", "zellij"]
+# packages = ["vim", "zellij", "tmux-local"]
