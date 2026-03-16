@@ -6,7 +6,7 @@ default_target_type = "symbolic"
 "vim/.vim/colors/lettepa.vim" = "~/.vim/colors/lettepa.vim"
 
 [zellij.files]
-"zellij/.config/zellij/config.kdl" = "~/.config/zellij/config.kdl"
+zellij = "~/.config/zellij"
 
 [tmux-remote.files]
 "tmux/remote.tmux.conf" = "~/.tmux.conf"
