@@ -1,0 +1,2 @@
+-- `stylua` for Lua
+return {}

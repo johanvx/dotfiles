@@ -1,0 +1,2 @@
+-- `neocmakelsp` for CMake
+return {}

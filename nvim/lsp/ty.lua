@@ -1,0 +1,2 @@
+-- `ty` for Python
+return {}

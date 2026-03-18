@@ -1,0 +1,23 @@
+{
+  "create-autocmd": {
+    "prefix": "create-autocmd",
+    "body": [
+      "vim.api.nvim_create_autocmd(${1:events}, {",
+      "  group = vim.api.nvim_create_augroup(${2:group}, { clear = true }),",
+      "  pattern = '*',",
+      "  callback = function() ${0} end",
+      "})"
+    ]
+  },
+  "create-autocmd-once": {
+    "prefix": "create-autocmd-once",
+    "body": [
+      "vim.api.nvim_create_autocmd(${1:events}, {",
+      "  group = vim.api.nvim_create_augroup(${2:group}, { clear = true }),",
+      "  once = true,",
+      "  pattern = '*',",
+      "  callback = function() ${0} end",
+      "})"
+    ]
+  }
+}

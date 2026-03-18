@@ -1,0 +1,2 @@
+-- `gopls` for Go
+return {}

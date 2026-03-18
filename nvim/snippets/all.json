@@ -1,0 +1,14 @@
+{
+  "github-https": {
+    "prefix": "github-https",
+    "body": [
+      "https://github.com/"
+    ]
+  },
+  "gitee-https": {
+    "prefix": "gitee-https",
+    "body": [
+      "https://gitee.com/"
+    ]
+  }
+}

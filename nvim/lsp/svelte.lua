@@ -1,0 +1,2 @@
+-- `svelte` for Svelte
+return {}

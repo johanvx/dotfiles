@@ -1,0 +1,2 @@
+-- `ruff` for Python
+return {}
