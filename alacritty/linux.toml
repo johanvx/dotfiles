@@ -1,0 +1,8 @@
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+persist = false
+post_processing = true
+mouse = { mods = "Control|Alt", enabled = true }
+binding = { key = "`", mods = "Control|Alt" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"

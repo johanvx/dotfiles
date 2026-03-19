@@ -1,0 +1,71 @@
+[colors.normal]
+black = "#101f30"   # bg,      anlan
+red = "#f03752"     # red,     haitanghong
+green = "#57c3c2"   # green,   shilü
+yellow = "#fbb957"  # yellow,  mihuang
+blue = "#66a9c9"    # blue,    jianshanlan
+magenta = "#ea7293" # magenta, fengxianhuahong
+cyan = "#51c4d3"    # cyan,    pubulan
+white = "#c4cbcf"   # fg0,     dalishihui
+
+[colors.bright]
+black = "#2b333e"   # bg0,      qinghui
+red = "#c21f30"     # red0,     fengyehong
+green = "#12aa9c"   # green0,   meidielü
+yellow = "#806332"  # yellow0,  canghuang
+blue = "#1661ab"    # blue0,    dianqing
+magenta = "#ee2c79" # magenta0, zijinghong
+cyan = "#1e9eb3"    # cyan0,    cuilan
+white = "#e4dfd7"   # fg,       zhenzhuhui
+
+[colors.dim]
+black = "#101f30"   # bg,      anlan
+red = "#f03752"     # red,     haitanghong
+green = "#57c3c2"   # green,   shilü
+yellow = "#fbb957"  # yellow,  mihuang
+blue = "#66a9c9"    # blue,    jianshanlan
+magenta = "#ea7293" # magenta, fengxianhuahong
+cyan = "#51c4d3"    # cyan,    pubulan
+white = "#c4cbcf"   # fg0,     dalishihui
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.footer_bar]
+background = "#101f30" # bg
+foreground = "#e4dfd7" # fg
+
+[colors.hints.end]
+background = "#c21f30" # red0
+foreground = "#e4dfd7" # fg
+
+[colors.hints.start]
+background = "#c21f30" # red0
+foreground = "#e4dfd7" # fg
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[colors.primary]
+background = "#101f30"        # bg
+foreground = "#e4dfd7"        # fg
+dim_foreground = "#c4cbcf"    # fg0
+bright_foreground = "#e4dfd7" # fg
+
+[colors.search.focused_match]
+background = "CellForeground"
+foreground = "#101f30"        # bg
+
+[colors.search.matches]
+background = "#1e9eb3" # cyan0
+foreground = "#e4dfd7" # fg
+
+[colors.selection]
+background = "#2b333e"  # bg0
+text = "CellForeground"
+
+[colors.vi_mode_cursor]
+background = "CellForeground"
+text = "#101f30"              # bg

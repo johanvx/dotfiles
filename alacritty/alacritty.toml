@@ -1,0 +1,67 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+dynamic_padding = true
+dimensions = { lines = 25, columns = 100 }
+
+[font]
+size = 24.0
+
+[cursor.vi_mode_style]
+blinking = "On"
+
+[[hints.enabled]]
+action = "Copy"
+hyperlinks = true
+persist = false
+post_processing = true
+mouse = { mods = "Control", enabled = true }
+binding = { key = "`", mods = "Control" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "'"
+mode = "~Search"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "FirstOccupied"
+key = "H"
+mods = "Shift"
+mode = "Vi|~Search"
+
+[[keyboard.bindings]]
+action = "Last"
+key = "L"
+mods = "Shift"
+mode = "Vi|~Search"
+
+[general]
+import = [
+  # Machine-specific configuration
+  #
+  # Alacritty supports nested imports in configuration, so it is possible to
+  # write in the local.toml the following content:
+  #
+  #     [general]
+  #     import = ["foo.toml", "bar.toml"]
+  #
+  # For OS-specific configurations, see
+  #
+  # - linux.toml,
+  # - macos.toml,
+  # - windows.toml.
+  #
+  # For colors, see
+  #
+  # - lettepa-dark.toml,
+  # - lettepa-light.toml.
+  "local.toml",
+]

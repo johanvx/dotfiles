@@ -1,18 +1,21 @@
 [settings]
 default_target_type = "symbolic"
 
-[vim.files]
-"vim/.vimrc" = "~/.vimrc"
-"vim/.vim/colors/lettepa.vim" = "~/.vim/colors/lettepa.vim"
+[alacritty.files]
+alacritty = "~/.config/alacritty"
 
 [nvim.files]
 nvim = "~/.config/nvim"
-
-[zellij.files]
-zellij = "~/.config/zellij"
 
 [tmux-remote.files]
 "tmux/remote.tmux.conf" = "~/.tmux.conf"
 
 [tmux-local.files]
 "tmux/local.tmux.conf" = "~/.tmux.conf"
+
+[vim.files]
+"vim/.vimrc" = "~/.vimrc"
+"vim/.vim/colors/lettepa.vim" = "~/.vim/colors/lettepa.vim"
+
+[zellij.files]
+zellij = "~/.config/zellij"
