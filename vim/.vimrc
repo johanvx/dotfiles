@@ -3,6 +3,12 @@ filetype plugin indent on
 syntax on
 
 " Options {{{
+" Encoding
+set encoding=utf-8
+scriptencoding utf-8
+set fileencodings=utf-8,default,latin1
+set fileformats=unix,mac,dos
+
 " UI
 set background=dark
 set cmdheight=1
@@ -78,13 +84,9 @@ set autochdir
 set autowrite
 set backspace=indent,eol,start
 set breakindent
-set clipboard=unnamed,unnamedplus
 set completeopt=menuone,noselect,noinsert
 set confirm
-set encoding=utf-8
 set expandtab
-set fileencodings=utf-8,default,latin1
-set fileformats=unix,mac,dos
 set formatoptions=nlmB1jq
 set hlsearch
 set ignorecase
@@ -127,17 +129,11 @@ set viewoptions=folds,options,cursor,unix,slash
 let mapleader = ' '
 let maplocalleaader = '\'
 
-" Buffer actions
-nnoremap [b :bprevious<CR>
-nnoremap ]b :bnext<CR>
-
-" Clear search highlight
-nnoremap <C-l> :nohlsearch<CR>
-vnoremap <C-l> <Esc>:nohlsearch<CR>
-
 " Cursor movements
 noremap j gj
 noremap k gk
+noremap gh H
+noremap gl L
 map H ^
 map L $
 " Some Emacs stuff
@@ -152,17 +148,58 @@ noremap! <C-d> <Del>
 " Delete shift width at the start of the line (paired with <C-t>)
 inoremap <C-g> <C-d>
 
-" Jumps
-nnoremap [j <C-o>
-nnoremap ]j <C-i>
+" Place search results at the center
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
+nnoremap <silent> g# g#zz
 
 " Shifts
 xnoremap < <gv
 xnoremap > >gv
 
+" System clipboard
+nnoremap <Leader>y "+y
+xnoremap <Leader>y "+y
+nnoremap <Leader>p "+p
+xnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+xnoremap <Leader>P "+P
+
+" Toggle {{{
+nnoremap <silent> <LocalLeader>b :call ToggleBackground()<CR>
+function! ToggleBackground()
+    if (&background == 'dark')
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+
+nnoremap <silent> <LocalLeader><LocalLeader> :call InspectKeyword()<CR>
+function! InspectKeyword()
+    let s = synID(line('.'), col('.'), 1)
+    echo synIDattr(s, 'name') . ' -> ' . synIDattr(synIDtrans(s), 'name')
+endfunction
+" }}}
+
 " Type commands quicker
 nnoremap ; :
 vnoremap ; :
+
+" Clear search highlight
+nnoremap <C-l> :nohlsearch<CR>
+vnoremap <C-l> <Esc>:nohlsearch<CR>
+
+" Jumps
+" between buffer
+nnoremap [b :bprevious<CR>
+nnoremap ]b :bnext<CR>
+" between window
+nnoremap [w <C-w>W
+nnoremap ]w <C-w>w
 
 " Window actions
 inoremap <Up> <Esc>:resize +1 <Bar> startinsert<CR>
@@ -177,28 +214,14 @@ vnoremap <Left> <Esc>:vertical resize -1<CR>gv
 inoremap <Right> <Esc>:vertical resize +1 <Bar> startinsert<CR>
 nnoremap <Right> :vertical resize +1<CR>
 vnoremap <Right> <Esc>:vertical resize +1<CR>gv
-nnoremap [w <C-w>W
-nnoremap ]w <C-w>w
 " }}}
 
 " Color scheme {{{
-colorscheme lettepa
-
-nnoremap <silent> <LocalLeader>b :call ToggleBackground()<CR>
-nnoremap <silent> <LocalLeader><LocalLeader> :call InspectKeyword()<CR>
-
-function! ToggleBackground()
-    if (&background == 'dark')
-        set background=light
-    else
-        set background=dark
-    endif
-endfunction
-
-function! InspectKeyword()
-    let s = synID(line('.'), col('.'), 1)
-    echo synIDattr(s, 'name') . ' -> ' . synIDattr(synIDtrans(s), 'name')
-endfunction
+if !empty(globpath(&rtp, 'colors/lettepa.vim'))
+    colorscheme lettepa
+else
+    colorscheme default
+endif
 " }}}
 
 " Autocmds {{{
