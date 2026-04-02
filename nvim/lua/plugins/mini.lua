@@ -32,6 +32,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
       clues = {
         {
           { mode = "n", keys = "<Leader><Leader>", desc = "+Toggle" },
+          { mode = "n", keys = "<Leader>a", desc = "+AI" },
           { mode = "n", keys = "<Leader>s", desc = "+Snippets" },
         },
         clue.gen_clues.builtin_completion(),

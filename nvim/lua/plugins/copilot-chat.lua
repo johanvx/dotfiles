@@ -9,4 +9,22 @@ vim.pack.add({
 
 require("CopilotChat").setup()
 
+vim.keymap.set(
+  "",
+  "<Leader>a<Leader>",
+  "<Cmd>CopilotChatToggle<CR>",
+  { desc = "Toggle chat (CopilotChat)" }
+)
+vim.keymap.set(
+  "",
+  "<Leader>ap",
+  "<Cmd>CopilotChatPrompts<CR>",
+  { desc = "Pick prompt (CopilotChat)" }
+)
+vim.keymap.set(
+  "",
+  "<Leader>a?",
+  "<Cmd>CopilotChatModels<CR>",
+  { desc = "Pick model (CopilotChat)" }
+)
 -- vim:sw=2:ts=2:sts=2:et:tw=80:cc=+1:norl:
