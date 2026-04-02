@@ -26,6 +26,9 @@ require("plugins.diff")
 require("plugins.img-clip")
 require("plugins.snippets")
 
+-- AI
+require("plugins.copilot-chat")
+
 -- Language specific
 require("plugins.lang.markdown")
 require("plugins.lang.rust")
