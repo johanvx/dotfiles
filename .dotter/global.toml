@@ -4,6 +4,9 @@ default_target_type = "symbolic"
 [alacritty.files]
 alacritty = "~/.config/alacritty"
 
+[fish.files]
+fish = "~/.config/fish"
+
 [nvim.files]
 nvim = "~/.config/nvim"
 
