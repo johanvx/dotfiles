@@ -1,0 +1,61 @@
+# Lettepa Light
+#
+# #f8f4ed bg,       hanbaiyu
+# #e4dfd7 bg0,      zhenzhuhui
+# #47484c fg0,      waguanhui
+# #2b333e fg,       qinghui
+# #c21f30 red,      fengyehong
+# #12aa9c green,    meidielü
+# #1661ab blue,     dianqing
+# #1e9eb3 cyan,     cuilan
+# #ee2c79 magenta,  zijinghong
+# #806332 yellow,   canghuang
+# #f03752 red0,     haitanghong
+# #57c3c2 green0,   shilü
+# #66a9c9 blue0,    jianshilan
+# #51c4d3 cyan0,    pubulan
+# #ea7293 magenta0, fengxianhuahong
+# #fbb957 yellow0,  mihuang
+
+# Syntax highlighting
+
+fish_color_normal          2b333e              # fg
+fish_color_command         12aa9c              # green
+fish_color_keyword         ee2c79              # magenta
+fish_color_quote           1661ab              # blue
+fish_color_redirection     ee2c79              # magenta
+fish_color_end             47484c              # fg0
+fish_color_error           c21f30       --bold # red
+fish_color_param           2b333e              # fg
+fish_color_valid_path      1661ab              # blue
+fish_color_option          1e9eb3              # cyan
+fish_color_comment         806332              # yellow
+fish_color_selection       e4dfd7              # bg0
+fish_color_operator        ee2c79              # magenta
+fish_color_escape          12aa9c              # green
+fish_color_autosuggestion  47484c              # fg0
+fish_color_cwd             1661ab              # blue
+fish_color_cwd_root        1661ab              # blue
+fish_color_user            ee2c79              # magenta
+fish_color_host            12aa9c              # green
+fish_color_host_remote     12aa9c              # green
+fish_color_status          c21f30       --bold # red
+fish_color_cancel          c21f30              # red
+fish_color_search_match    --background 1e9eb3 # cyan0
+fish_color_history_current --reverse
+
+# Pager
+
+fish_pager_color_progress              2b333e --bold # fg
+fish_pager_color_background
+fish_pager_color_prefix                2b333e --bold # fg
+fish_pager_color_completion            47484c        # fg0
+fish_pager_color_description           47484c        # fg0
+fish_pager_color_selected_background   --reverse
+fish_pager_color_selected_prefix       --bold --reverse
+fish_pager_color_selected_completion   --reverse
+fish_pager_color_selected_description  --reverse
+fish_pager_color_secondary_background
+fish_pager_color_secondary_prefix      2b333e --bold # fg
+fish_pager_color_secondary_completion  47484c        # fg0
+fish_pager_color_secondary_description 47484c        # fg0
