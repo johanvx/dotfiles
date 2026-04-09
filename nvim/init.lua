@@ -1,5 +1,3 @@
-_G.User = {}
-
 -- Core configuration
 require("core.options")
 require("core.keymaps")
@@ -37,7 +35,9 @@ require("plugins.lang.typst")
 vim.cmd("colorscheme catppuccin")
 
 -- Automatically sync Neovim background with macOS appearance
-if User.g.is_macos then
+local globals = require("core.globals")
+
+if globals.is_macos then
   local function get_appearance()
     -- Returns true if macOS is in dark mode, false otherwise
     local cmd =

@@ -9,7 +9,7 @@ return {
         callSnippet = "Replace",
       },
       diagnostics = {
-        globals = { "vim", "User" },
+        globals = { "vim" },
       },
       hint = { enable = true },
       workspace = {

@@ -38,7 +38,7 @@ local swap_dir = path_concat(cache_dir, "swap//")
 local undo_dir = path_concat(cache_dir, "undo//")
 local view_dir = path_concat(cache_dir, "view//")
 
-User.g = {
+return {
   backup_dir = backup_dir,
   cache_dir = cache_dir,
   config_dir = config_dir,
@@ -51,7 +51,5 @@ User.g = {
   undo_dir = undo_dir,
   view_dir = view_dir,
 }
-
-return User.g
 
 -- vim:sw=2:ts=2:sts=2:et:tw=80:cc=+1:norl:
