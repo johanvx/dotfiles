@@ -5,12 +5,32 @@ vim.pack.add({
   },
   -- Copilot provider
   { src = "https://github.com/fang2hou/blink-copilot" },
+  -- Copilot setup
+  { src = "https://github.com/zbirenbaum/copilot.lua" },
+  -- Copilot NES functionality
+  { src = "https://github.com/copilotlsp-nvim/copilot-lsp" },
 })
 
 vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
   group = vim.api.nvim_create_augroup("SetupCompletion", { clear = true }),
   once = true,
   callback = function()
+    -- Set up Copilot, use `:Copilot auth` to authenticate
+    vim.g.copilot_nes_debounce = 500
+    require("copilot").setup({
+      suggestion = { enabled = false },
+      panel = { enabled = false },
+      filetypes = { markdown = true, help = true },
+      nes = {
+        enabled = true,
+        keymap = {
+          accept_and_goto = "<Tab>",
+          accept = false,
+          dismiss = "<Esc>",
+        },
+      },
+    })
+
     require("blink.cmp").setup({
       keymap = { preset = "default" },
       appearance = {

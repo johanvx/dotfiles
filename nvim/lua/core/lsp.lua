@@ -13,7 +13,6 @@ require("mason").setup({
   },
 })
 
-vim.lsp.enable("copilot")
 vim.lsp.enable("clangd")
 
 -- LSP-local configuration
