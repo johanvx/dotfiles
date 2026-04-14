@@ -25,20 +25,23 @@ abbr -a -- itree 'eza --icons auto --tree'
 abbr -a -- g git
 abbr -a -- gbr 'git branch'
 abbr -a -- gcm 'git commit'
+abbr -a -- gcma 'git commit --amend'
 abbr -a -- gco 'git checkout'
 abbr -a -- gcp 'git cherry-pick'
 abbr -a -- gdf 'git diff'
 abbr -a -- gdft 'git difft'
-abbr -a -- gfe 'git fetch'
+abbr -a -- gfe 'git fetch --prune'
+abbr -a -- gfea 'git fetch --prune --all'
 abbr -a -- glog 'git log'
-abbr -a -- glogt 'git log'
+abbr -a -- glogt 'git logt'
 abbr -a -- gpl 'git pull'
+abbr -a -- gplr 'git pull -r'
 abbr -a -- gpr 'git prune'
 abbr -a -- gps 'git push'
 abbr -a -- grb 'git rebase'
 abbr -a -- grs 'git restore'
 abbr -a -- gsh 'git show'
-abbr -a -- gsht 'git show'
+abbr -a -- gsht 'git showt'
 abbr -a -- gss 'git stash'
 abbr -a -- gst 'git status'
 abbr -a -- gsw 'git switch'
@@ -46,6 +49,9 @@ abbr -a -- gwt 'git worktree'
 
 # pueue
 abbr -a -- p pueue
+
+# pixi
+abbr -a -- px pixi
 
 # tmux
 abbr -a -- t tmux
@@ -58,9 +64,6 @@ abbr -a -- kc kubectl
 
 # Taskwarrior
 abbr -a -- tt taskwarrior-tui
-
-# micromamba
-abbr -a -- mm micromamba
 
 # zellij
 abbr -a -- zlj zellij
