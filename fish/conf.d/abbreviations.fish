@@ -6,20 +6,20 @@ abbr -a -- vd 'nvim -d'
 abbr -a -- c cargo
 
 # eza
-abbr -a -- l eza
-abbr -a -- l1 'eza -1'
-abbr -a -- ls eza
-abbr -a -- la 'eza -a'
-abbr -a -- lt 'eza --tree'
-abbr -a -- ll 'eza --git -lgh'
-abbr -a -- tree 'eza --tree'
 abbr -a -- il 'eza --icons auto'
 abbr -a -- il1 'eza --icons auto -1'
-abbr -a -- ils 'eza --icons auto'
 abbr -a -- ila 'eza --icons auto -a'
-abbr -a -- ilt 'eza --icons auto --tree'
 abbr -a -- ill 'eza --icons auto --git -lgh'
+abbr -a -- ils 'eza --icons auto'
+abbr -a -- ilt 'eza --icons auto --tree'
 abbr -a -- itree 'eza --icons auto --tree'
+abbr -a -- l eza
+abbr -a -- l1 'eza -1'
+abbr -a -- la 'eza -a'
+abbr -a -- ll 'eza --git -lgh'
+abbr -a -- ls eza
+abbr -a -- lt 'eza --tree'
+abbr -a -- tree 'eza --tree'
 
 # git
 abbr -a -- g git
@@ -50,17 +50,14 @@ abbr -a -- gwt 'git worktree'
 # pueue
 abbr -a -- p pueue
 
+# presenterm
+abbr -a -- pt presenterm
+
 # pixi
 abbr -a -- px pixi
 
 # tmux
 abbr -a -- t tmux
-
-abbr -a -- pt presenterm
-
-# K8s
-abbr -a -- mk minikube
-abbr -a -- kc kubectl
 
 # Taskwarrior
 abbr -a -- tt taskwarrior-tui
