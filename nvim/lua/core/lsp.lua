@@ -14,6 +14,8 @@ require("mason").setup({
 })
 
 vim.lsp.enable("clangd")
+vim.lsp.enable("harper_ls")
+vim.lsp.enable("typos_lsp")
 
 -- LSP-local configuration
 vim.api.nvim_create_autocmd("LspAttach", {
