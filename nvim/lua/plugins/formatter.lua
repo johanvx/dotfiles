@@ -22,7 +22,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
       desc = "Toggle format on save",
     })
 
-    require("conform").setup({
+    local conform = require("conform")
+
+    conform.setup({
       default_format_opts = { stop_after_first = true },
       formatters_by_ft = {
         ["*"] = {
@@ -64,6 +66,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
         return { lsp_fallback = true, timeout_ms = 500 }
       end,
     })
+
+    conform.formatters.typstyle = {
+      append_args = { "--wrap-text" },
+    }
 
     vim.keymap.set(
       "n",
