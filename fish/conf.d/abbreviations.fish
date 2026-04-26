@@ -1,6 +1,7 @@
 # neovim
 abbr -a -- v nvim
 abbr -a -- vd 'nvim -d'
+abbr -a -- vr 'nvim -R'
 
 # cargo
 abbr -a -- c cargo
