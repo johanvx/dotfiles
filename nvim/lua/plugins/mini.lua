@@ -159,12 +159,12 @@ statusline.setup({
       -- sections, etc.)
       return statusline.combine_groups({
         { hl = mode_hl, strings = { mode } },
-        { hl = "statuslineDevinfo", strings = { git, diagnostics } },
+        { hl = "MiniStatuslineDevinfo", strings = { git, diagnostics } },
         "%=", -- End left alignment
         "%<", -- Mark general truncate point
-        { hl = "statuslineFilename", strings = { filename } },
+        { hl = "MiniStatuslineFilename", strings = { filename } },
         "%=", -- End center alignment
-        { hl = "statuslineFileinfo", strings = { fileinfo } },
+        { hl = "MiniStatuslineFileinfo", strings = { fileinfo } },
         {
           hl = mode_hl,
           strings = { searchcount, location },

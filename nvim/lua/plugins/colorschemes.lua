@@ -183,6 +183,7 @@ require("catppuccin").setup({
         MiniPickBorderText = { fg = p.overlay0, bg = p.surface0 },
         MiniPickMatchCurrent = { style = { "reverse" } },
         MiniStatuslineInactive = { fg = p.overlay0, bg = p.surface0 },
+        MiniStatuslineFilename = { fg = p.text, bg = p.surface0 },
         MiniTablineCurrent = { fg = p.text, bg = p.base, style = {} },
         MiniTablineFill = { bg = p.surface0 },
         MiniTablineHidden = { fg = p.overlay0, bg = p.surface0 },
