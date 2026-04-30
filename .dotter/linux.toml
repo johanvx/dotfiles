@@ -1,1 +1,1 @@
-# packages = ["alacritty", "fish", "nvim", "tmux-local", "vim", "zellij"]
+# packages = ["alacritty", "eza", "fish", "nvim", "tmux-local", "vim", "zellij"]

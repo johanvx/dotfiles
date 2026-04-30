@@ -4,6 +4,9 @@ default_target_type = "symbolic"
 [alacritty.files]
 alacritty = "~/.config/alacritty"
 
+[eza.files]
+eza = "~/.config/eza"
+
 [fish.files]
 fish = "~/.config/fish"
 
