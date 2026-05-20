@@ -1,3 +1,6 @@
+[alacritty.files]
+alacritty = "~/AppData/Roaming/alacritty"
+
 [vim.files]
 "vim/.vimrc" = "~/_vimrc"
 "vim/.vim/colors/lettepa.vim" = "~/vimfiles/colors/lettepa.vim"

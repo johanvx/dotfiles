@@ -1,0 +1,2 @@
+[terminal]
+shell = { program = "C:/Program Files/Git/bin/bash.exe", args = ["-l", "-c", "'cd ~ && exec bash'"] }
