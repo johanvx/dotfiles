@@ -26,7 +26,7 @@ require("plugins.img-clip")
 require("plugins.snippets")
 
 -- AI
-require("plugins.copilot-chat")
+require("plugins.agentic")
 
 -- Language specific
 require("plugins.lang.markdown")

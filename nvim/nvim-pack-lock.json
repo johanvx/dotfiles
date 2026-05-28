@@ -4,6 +4,10 @@
       "rev": "137d3bc527518f5ea982c43c43084496732365c3",
       "src": "https://github.com/copilotC-Nvim/CopilotChat.nvim"
     },
+    "agentic.nvim": {
+      "rev": "b7dc624564a08f45141e85a0aef28bb4f89a0d29",
+      "src": "https://github.com/carlos-algms/agentic.nvim"
+    },
     "blame.nvim": {
       "rev": "179da7aaacce7c52874af636255ede72dd6fe796",
       "src": "https://github.com/FabijanZulj/blame.nvim"
