@@ -1,1 +1,10 @@
-# packages = ["alacritty", "eza", "fish", "nvim", "tmux-local", "vim", "zellij"]
+# packages = [
+#   "agentic",
+#   "alacritty",
+#   "eza",
+#   "fish",
+#   "nvim",
+#   "tmux-local",
+#   "vim",
+#   "zellij",
+# ]

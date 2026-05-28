@@ -1,6 +1,10 @@
 [settings]
 default_target_type = "symbolic"
 
+[agentic.files]
+"agentic/.agents" = "~/.agents"
+"agentic/.pi" = "~/.pi"
+
 [alacritty.files]
 alacritty = "~/.config/alacritty"
 
