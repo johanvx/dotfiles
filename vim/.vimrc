@@ -214,6 +214,9 @@ vnoremap <Left> <Esc>:vertical resize -1<CR>gv
 inoremap <Right> <Esc>:vertical resize +1 <Bar> startinsert<CR>
 nnoremap <Right> :vertical resize +1<CR>
 vnoremap <Right> <Esc>:vertical resize +1<CR>gv
+
+" Quickly set 'textwidth' and 'colorcolumn'
+nnoremap <LocalLeader>w :set colorcolumn=+1 textwidth=
 " }}}
 
 " Color scheme {{{
