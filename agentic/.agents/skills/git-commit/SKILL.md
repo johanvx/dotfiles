@@ -75,7 +75,9 @@ Rules:
 
 - Type: `feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert`
 - Scope: module/subsystem (omit if unclear)
-- Description: imperative, concise, preferably <72 chars
+- Description: imperative, concise
+- **Title** (`<type>[scope]: <description>`): keep under 50 chars
+- Body: wrap at 72 chars
 - Breaking change:
   - `type(scope)!: description`
   - `BREAKING CHANGE: ...`
