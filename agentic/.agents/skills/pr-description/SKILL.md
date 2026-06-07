@@ -102,7 +102,6 @@ Use the [template](templates/pr-description.md) as a skeleton. Fill in:
 - Target 150-220 lines. 300+ is a smell.
 - Cut any sentence that does not change the reviewer's understanding.
 - Move long evidence into `<details>` collapsible sections.
-- Ensure prose is wrapped at ~72 chars where practical.
 
 ### Step 4. Assisted-by check
 
@@ -154,7 +153,6 @@ Present the completed PR description per the output contract below.
 - **Self-contained**: A reviewer should form an opinion without opening other docs
 - **No marketing tone**: Avoid "significantly enhances", "best-in-class", "great improvement"
 - **No self-congratulation**: The work speaks for itself
-- **Prose wrapping**: Wrap body text at ~72 chars where practical
 
 ## Diagram format guidance
 
