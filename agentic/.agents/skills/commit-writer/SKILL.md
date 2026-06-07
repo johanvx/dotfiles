@@ -54,9 +54,11 @@ Ask before committing (unless already answered):
 ### Step 2. Build staging plan
 
 - Stage only the intended logical change.
+- Use `git mv` to move/rename files already tracked by git.
 - Commands:
   - `git add <file...>`
   - `git add -p`
+  - `git mv <old> <new>`
 - Verify staged set: `git diff --staged --name-only`
 
 ### Step 3. Generate conventional commit message
@@ -74,10 +76,16 @@ Format:
 Rules:
 
 - Type: `feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert`
-- Scope: module/subsystem (omit if unclear)
-- Description: imperative, concise
-- **Title** (`<type>[scope]: <description>`): keep under 50 chars
-- Body: wrap at 72 chars
+- Scope: detect the project's convention by inspecting recent history:
+  `git log --oneline -20` and `git log --stat -5`
+  (some projects scope by subtree, others by content category —
+  follow what the project already does; omit scope if unclear)
+- Description: state what changed, not what the thing does —
+  avoid re-explaining the tool/feature's own purpose
+- **Title** (`<type>[scope]: <description>`): the **entire line** must stay under 50 chars — not just the description part
+- Body: wrap at 72 chars; wrap prose at 72 chars
+- Only add a body when explaining non-obvious trade-offs
+  or design decisions — do not narrate the obvious
 - Breaking change:
   - `type(scope)!: description`
   - `BREAKING CHANGE: ...`
@@ -129,6 +137,10 @@ Output in this exact order:
 - One logical change per commit.
 - Imperative present tense (`add`, `fix`, `refactor`).
 - Specific header; avoid vague wording.
+- Description states *what* was added/changed, not *what it does*.
+- Scope matches the project's existing convention (subtree, content category, etc.).
+- Body explains only non-obvious trade-offs or design decisions.
+- Body prose wrapped at 72 chars.
 - Include issue footer when provided.
 
 ## Deviation note
