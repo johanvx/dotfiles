@@ -24,6 +24,8 @@ Must:
 6. Never run destructive git operations unless explicitly requested.
 7. Never bypass hooks (`--no-verify`) unless explicitly requested.
 8. Never modify git config in this skill.
+9. Never add footers (`Cc:`, `Acked-by:`, `Signed-off-by:`, etc.) unless the user explicitly requests them.
+10. If AI tools (including this agent) contributed to the code, ask the user whether to add `Assisted-by: AGENT_NAME:MODEL_VERSION` before including it. Format per [Linux Kernel: Coding Assistants](https://docs.kernel.org/process/coding-assistants.html).
 
 ## Mandatory intake questions
 
@@ -86,6 +88,11 @@ Rules:
 - Body: wrap at 72 chars; wrap prose at 72 chars
 - Only add a body when explaining non-obvious trade-offs
   or design decisions — do not narrate the obvious
+- When adding a body, describe the problem/motivation first,
+  then the solution (problem-before-solution)
+- Self-containment: the message should be understandable
+  without referring to external resources; if referencing
+  a commit, include both SHA and oneline summary
 - Breaking change:
   - `type(scope)!: description`
   - `BREAKING CHANGE: ...`
@@ -140,6 +147,9 @@ Output in this exact order:
 - Description states *what* was added/changed, not *what it does*.
 - Scope matches the project's existing convention (subtree, content category, etc.).
 - Body explains only non-obvious trade-offs or design decisions.
+- Body describes problem before solution.
+- Body quantifies trade-offs when possible (numbers beat adjectives).
+- Body is self-contained (understandable without external links).
 - Body prose wrapped at 72 chars.
 - Include issue footer when provided.
 
