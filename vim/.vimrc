@@ -217,6 +217,9 @@ vnoremap <Right> <Esc>:vertical resize +1<CR>gv
 
 " Quickly set 'textwidth' and 'colorcolumn'
 nnoremap <LocalLeader>w :set colorcolumn=+1 textwidth=
+
+" Diff mergetool
+nnoremap d;g :diffget
 " }}}
 
 " Color scheme {{{
