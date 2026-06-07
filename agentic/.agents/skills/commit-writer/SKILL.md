@@ -1,5 +1,5 @@
 ---
-name: git-commit
+name: commit-writer
 description: Use when the user asks to create a git commit (including "/commit"). Analyze real repo changes, stage safely, generate a Conventional Commit message, and commit.
 ---
 
