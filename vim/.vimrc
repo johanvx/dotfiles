@@ -81,6 +81,7 @@ set nowrap
 
 " Edit
 set autochdir
+set autocomplete
 set autowrite
 set backspace=indent,eol,start
 set breakindent
@@ -220,6 +221,9 @@ nnoremap <LocalLeader>w :set colorcolumn=+1 textwidth=
 
 " Diff mergetool
 nnoremap d;g :diffget
+
+" Quick show-up complete
+inoremap <C-l> <C-X><C-N>
 " }}}
 
 " Color scheme {{{

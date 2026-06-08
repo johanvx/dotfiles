@@ -10,7 +10,11 @@ vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
   once = true,
   callback = function()
     require("blink.cmp").setup({
-      keymap = { preset = "default" },
+      keymap = {
+        preset = "default",
+        ["<C-space>"] = false,
+        ["<C-l>"] = { "show", "show_documentation", "hide_documentation" },
+      },
       appearance = {
         nerd_font_variant = "mono",
       },
