@@ -1,0 +1,23 @@
+# Theme
+theme = light:Lettepa Light,dark:Lettepa Dark
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# Font
+font-size = 24
+
+# Key bindings
+keybind = ctrl+'>'=toggle_readonly
+keybind = ctrl+'>c=new_tab
+keybind = ctrl+'>n=next_tab
+keybind = ctrl+'>o=goto_split:next
+keybind = ctrl+'>p=previous_tab
+keybind = ctrl+'>s=new_split:down
+keybind = ctrl+'>v=new_split:right
+keybind = ctrl+'>z=toggle_split_zoom
+
+# Load configs
+config-file = ?local.ghostty

@@ -1,0 +1,37 @@
+# Lettepa Light
+# A color theme inspired by solarized and gruvbox.
+# Colors from chinese-traditional-colors.
+
+# Normal colors
+# 0=Hanbaiyu 1=Fengyehong 2=Meidielü 3=Canghuang 4=Dianqing 5=Zijinghong 6=Cuilan 7=Waguanhui
+palette = 0=#f8f4ed
+palette = 1=#c21f30
+palette = 2=#12aa9c
+palette = 3=#806332
+palette = 4=#1661ab
+palette = 5=#ee2c79
+palette = 6=#1e9eb3
+palette = 7=#47484c
+
+# Bright colors
+# 8=Zhenzhuhui 9=Haitanghong 10=Shilü 11=Mihuang 12=Jianshilan 13=Fengxianhuahong 14=Pubulan 15=Qinghui
+palette = 8=#e4dfd7
+palette = 9=#f03752
+palette = 10=#57c3c2
+palette = 11=#fbb957
+palette = 12=#66a9c9
+palette = 13=#ea7293
+palette = 14=#51c4d3
+palette = 15=#2b333e
+
+# Default colors (background=Hanbaiyu, foreground=Qinghui)
+background = #f8f4ed
+foreground = #2b333e
+
+# Cursor colors
+cursor-color = #2b333e
+cursor-text = #f8f4ed
+
+# Selection colors (background=Zhenzhuhui)
+selection-background = #e4dfd7
+selection-foreground = #2b333e
