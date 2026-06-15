@@ -2,6 +2,12 @@
 decorations = "Buttonless"
 option_as_alt = "OnlyLeft"
 
+# Option+Enter https://pi.dev/docs/latest/terminal-setup#alacritty
+[[keyboard.bindings]]
+key = "Enter"
+mods = "Alt"
+chars = "\u001b[13;3u"
+
 [[hints.enabled]]
 command = "open"
 hyperlinks = true
