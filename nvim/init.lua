@@ -25,9 +25,6 @@ require("plugins.diff")
 require("plugins.img-clip")
 require("plugins.snippets")
 
--- AI
-require("plugins.agentic")
-
 -- Language specific
 require("plugins.lang.markdown")
 require("plugins.lang.rust")
