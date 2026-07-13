@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
       provider = "openai_fim_compatible",
       provider_options = {
         openai_fim_compatible = {
-          api_key = "DEEPSEEK_API_KEY",
+          api_key = "DEEPSEEK_API_KEY_MINUET_AI",
           name = "deepseek",
           optional = {
             max_tokens = 4096,
