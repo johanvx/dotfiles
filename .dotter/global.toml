@@ -8,6 +8,9 @@ default_target_type = "symbolic"
 [alacritty.files]
 alacritty = "~/.config/alacritty"
 
+[bash.files]
+bash = "~/.config/bash"
+
 [eza.files]
 eza = "~/.config/eza"
 
