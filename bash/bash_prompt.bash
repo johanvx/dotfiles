@@ -1,7 +1,7 @@
 PROMPT_COMMAND=_bash_prompt
 
 _bash_prompt() {
-    local pipe_status="${PIPESTATUS[@]}"
+    local -a pipe_status=("${PIPESTATUS[@]}")
     local -i pipe_failed=0
     for status in "${pipe_status[@]}"; do
         if (( status != 0 )); then
