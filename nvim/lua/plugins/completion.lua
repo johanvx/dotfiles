@@ -34,7 +34,7 @@ vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
         preset = "default",
         ["<C-space>"] = false,
         ["<C-l>"] = { "show", "show_documentation", "hide_documentation" },
-        ["<C-;>"] = minuet.make_blink_map(),
+        ["<C-m>"] = minuet.make_blink_map(),
       },
       appearance = {
         nerd_font_variant = "mono",
