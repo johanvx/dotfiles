@@ -80,4 +80,14 @@ set({ "", "!" }, "<Right>", "<Cmd>vertical resize +1<CR>", "Increase width")
 -- Quickly set 'textwidth' and 'colorcolumn'
 set_locallead("n", "w", ":set colorcolumn=+1 textwidth=", "Text width:")
 
+-- Magic search by default
+set("n", "/", "/\\v")
+set("n", "?", "?\\v")
+
+-- Search inside Visual area
+set_locallead("n", "/", "/\\%V\\v", "Search inside Visual area")
+set_locallead("n", "?", "?\\%V\\v", "Search inside Visual area")
+set_locallead("v", "/", "<Esc>/\\%V\\v", "Search inside Visual area")
+set_locallead("v", "?", "<Esc>?\\%V\\v", "Search inside Visual area")
+
 -- vim:sw=2:ts=2:sts=2:et:tw=80:cc=+1:norl:
