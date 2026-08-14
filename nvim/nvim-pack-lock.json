@@ -10,7 +10,7 @@
       "version": "1.0.0 - 2.0.0"
     },
     "catppuccin": {
-      "rev": "e068ab5f8261f23f6f71ffd8791ae40315b77b9c",
+      "rev": "79e2049a0fdf7ec840f8463fe1d962c94493196b",
       "src": "https://github.com/catppuccin/nvim"
     },
     "colorful-winsep.nvim": {
@@ -22,7 +22,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "fzf-lua": {
-      "rev": "39da6060d53659acf3ec118200bc48721b29b8fd",
+      "rev": "8671012a7b2a1648595952c655039d51fb301c14",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "img-clip.nvim": {
@@ -34,19 +34,19 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "dc8a9918c3b1bc18a5fcd04d39b6d658074c0886",
+      "rev": "629bf6792187e11b4829411c1648f86f28df3963",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "minuet-ai.nvim": {
-      "rev": "d29dec4c36be2b41aa10e70938b7b09a03f0bdba",
+      "rev": "479487c34041f53aad3184597428e42d9f3333b5",
       "src": "https://github.com/milanglacier/minuet-ai.nvim"
     },
     "neogit": {
-      "rev": "43ea1a0854052e583f647e0b35879f0158a70a78",
+      "rev": "37e0f22a2345bad1bffe01b31970885882f46275",
       "src": "https://github.com/NeogitOrg/neogit"
     },
     "numb.nvim": {
-      "rev": "167fbbb8de5529eac4f66ef054c260636cd9af51",
+      "rev": "36260c446465b1303b0b1922c722904791bdb03f",
       "src": "https://github.com/nacro90/numb.nvim"
     },
     "nvim-lint": {
@@ -54,11 +54,11 @@
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "dd1c9b802c943278179a5d819369cda085b79d45",
+      "rev": "43ed3797b266e1ee8d222e491379ad471c9d3146",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-scissors": {
-      "rev": "77dfcafd53088c7941f2d383541aa8fdda7fd7b7",
+      "rev": "52de279bc53e849a413c675238abd3ed4a55cc64",
       "src": "https://github.com/chrisgrieser/nvim-scissors"
     },
     "nvim-silicon": {
@@ -66,7 +66,7 @@
       "src": "https://github.com/michaelrommel/nvim-silicon"
     },
     "nvim-treesitter": {
-      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "rev": "c9f9ed6c1892f629ea399f4ee7905f2686fa13f2",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "oil.nvim": {
@@ -86,11 +86,11 @@
       "src": "https://github.com/rust-lang/rust.vim"
     },
     "skim": {
-      "rev": "f2ca01e187e5d97657d9113cf6f4deb98fd09a3b",
+      "rev": "5fc3b0c1a0cb1f42cfe9b9edab13b719d74e1bbd",
       "src": "https://github.com/skim-rs/skim"
     },
     "typst-preview.nvim": {
-      "rev": "325036ee145ca51d9efb145c09ac16bce3bc8b7d",
+      "rev": "1c2e19486397be1c580b560fc50ee36abe329c46",
       "src": "https://github.com/chomosuke/typst-preview.nvim",
       "version": "1.0.0 - 2.0.0"
     },
