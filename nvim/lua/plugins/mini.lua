@@ -12,6 +12,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
     })
     require("mini.comment").setup()
     require("mini.cursorword").setup()
+    require("mini.icons").setup()
+    require("mini.jump2d").setup()
+    require("mini.splitjoin").setup()
+    require("mini.surround").setup()
+
     require("mini.diff").setup({
       mappings = {
         apply = "<LocalLeader>h",
@@ -22,10 +27,12 @@ vim.api.nvim_create_autocmd("BufEnter", {
         style = "sign",
       },
     })
-    require("mini.icons").setup()
-    require("mini.jump2d").setup()
-    require("mini.splitjoin").setup()
-    require("mini.surround").setup()
+    vim.keymap.set(
+      "n",
+      "<Leader><Leader>h",
+      "<Cmd>lua MiniDiff.toggle_overlay()<CR>",
+      { desc = "Toggle diff hunk overlay" }
+    )
 
     local clue = require("mini.clue")
     clue.setup({
