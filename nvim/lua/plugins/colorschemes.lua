@@ -203,6 +203,7 @@ require("catppuccin").setup({
         ["@keyword.return"] = { link = "Operator" },
         ["@keyword.import.c"] = { link = "Include" },
         ["@keyword.import.cpp"] = { link = "Include" },
+        ["@module"] = { link = "Constant" },
         ["@label"] = { link = "Label" },
         ["@label.json"] = { link = "Label" },
         ["@markup.link.url"] = { link = "Underlined" },
