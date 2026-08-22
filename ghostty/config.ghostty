@@ -6,9 +6,6 @@ cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
 
-# Font
-font-size = 24
-
 # Key bindings
 keybind = ctrl+'>'=toggle_readonly
 keybind = ctrl+'>c=new_tab
