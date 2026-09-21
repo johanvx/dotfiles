@@ -232,6 +232,18 @@ if !empty(globpath(&rtp, 'colors/lettepa.vim'))
 else
     colorscheme default
 endif
+
+if !empty(globpath(&rtp, 'colors/lettepa.vim')) &&
+            \ !empty(globpath(&rtp, 'colors/lettepa-transparent.vim'))
+nnoremap <silent> <LocalLeader>t :call ToggleLettepaTransparent()<CR>
+function! ToggleLettepaTransparent()
+    if (g:colors_name == 'lettepa')
+        colorscheme lettepa-transparent
+    elseif (g:colors_name == 'lettepa-transparent')
+        colorscheme lettepa
+    endif
+endfunction
+endif
 " }}}
 
 " Autocmds {{{
