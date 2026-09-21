@@ -243,6 +243,7 @@ function! ToggleLettepaTransparent()
         colorscheme lettepa
     endif
 endfunction
+call ToggleLettepaTransparent()
 endif
 " }}}
 
