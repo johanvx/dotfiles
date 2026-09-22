@@ -2,12 +2,13 @@ confirm-before-quit = true
 draw-bold-text-with-light-colors = false
 env-vars = ["TERM=xterm-256color"]
 grapheme-clustering = true
-
-[platform]
-windows.shell = {
-    program = "C:\\Program Files\\Git\\bin\\bash.exe",
-    args = ["-l", "-c", "'cd ~ && exec bash'"]
-}
+ignore-selection-foreground-color = false
+line-height = 1.0
+hide-mouse-cursor-when-typing = false
+option-as-alt = "left"
+padding = [4]
+enable-scroll-bar = true
+scrollback-history-limit = 100000
 
 [adaptive-theme]
 dark = "lettepa-dark"
@@ -34,11 +35,15 @@ custom-mouse-cursor = false
 trail-cursor = false
 
 [fonts]
-size = 20
+size = 16
 hinting = true
 features = []
 use-drawable-chars = true
-symbol-map = []
+symbol-map = [
+  # Chinese characters
+  { start = "4E00", end = "9FFF", font-family = "Noto Sans SC", font-weight = 400 },
+  { start = "3400", end = "4DBF", font-family = "Noto Sans SC", font-weight = 400 },
+]
 disable-warnings-not-found = false
 additional-dirs = []
 
@@ -62,10 +67,73 @@ family = "Noto Sans Mono"
 style = "default"
 weight = 700
 
+[hints]
+alphabet = "jfkdls;ahgurieowpq"
+
+[[hints.rules]]
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`\\\\]+"
+hyperlinks = true
+post-processing = true
+persist = false
+
+[hints.rules.action]
+command = "Copy"
+
+[hints.rules.binding]
+key = "`"
+mods = ["Control"]
+
+[hints.rules.mouse]
+enabled = true
+mods = ["Control"]
+
+[keyboard]
+disable-ctlseqs-alt = true
+ime-cursor-positioning = true
+
+[navigation]
+mode = "Tab"
+use-split = true
+unfocused-split-opacity = 0.4
+open-config-with-split = true
+hide-if-single = true
+max-tab-width = 240
+
+[panel]
+padding = [4]
+row-gap = 0
+column-gap = 0
+border-width = 2.0
+border-radius = 8.0
+
+[platform]
+windows.shell = {
+    program = "C:\\Program Files\\Git\\bin\\bash.exe",
+    args = ["-l", "-c", "'cd ~ && exec bash'"]
+}
+macos.window.blur = "macos-glass-regular"
+macos.window.decorations = "Buttonless"
+
+[renderer]
+disable-unfocused-render = false
+disable-occluded-render = true
+strategy = "events"
+
+[scroll]
+multiplier = 3.0
+divider = 1.0
+
 [window]
+columns = 100
+rows = 25
+mode = "Windowed"
+quake-width-percentage = 1.0
+quake-height-percentage = 0.4
 opacity = 0.6
-decorations = "transparent"
-blur = "macos-glass-regular"
+blur = true
+decorations = "Transparent"
+macos-use-shadow = true
+windows-corner-preference = "Round"
 
 [bindings]
 keys = [
