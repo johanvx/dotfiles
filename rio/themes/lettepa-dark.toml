@@ -1,0 +1,54 @@
+[colors]
+# Regular colors
+background = "#101f30" # bg,      anlan
+black = "#101f30"      # bg,      anlan
+blue = "#66a9c9"       # blue,    jianshilan
+cyan = "#51c4d3"       # cyan,    pubulan
+foreground = "#e4dfd7" # fg,      zhenzhuhui
+green = "#57c3c2"      # green,   shilü
+magenta = "#ea7293"    # magenta, fengxianhuahong
+red = "#f03752"        # red,     haitanghong
+white = "#e4dfd7"      # fg,      zhenzhuhui
+yellow = "#fbb957"     # yellow,  mihuang
+
+# Cursor
+cursor = "#e4dfd7"    # fg, zhenzhuhui
+vi-cursor = "#e4dfd7" # fg, zhenzhuhui
+
+# Navigation
+tabs = "#c4cbcf"         # fg0, dalishihui
+tabs-active = "#e4dfd7"  # fg,  zhenzhuhui
+split = "#c4cbcf"        # fg0, dalishihui
+split-active = "#c4cbcf" # fg0, dalishihui
+
+# Search
+search-match-background = "#1e9eb3"         # cyan0, cuilan
+search-match-foreground = "#e4dfd7"         # fg,    zhenzhuhui
+search-focused-match-background = "#e4dfd7" # fg,    zhenzhuhui
+search-focused-match-foreground = "#101f30" # bg,    anlan
+
+# Selection
+selection-background = "#2b333e" # bg0, qinghui
+selection-foreground = "#e4dfd7" # fg,  zhenzhuhui
+
+# Dim colors
+dim-black = "#101f30"      # bg,      anlan
+dim-blue = "#66a9c9"       # blue,    jianshilan
+dim-cyan = "#51c4d3"       # cyan,    pubulan
+dim-foreground = "#c4cbcf" # fg0,     dalishihui
+dim-green = "#57c3c2"      # green,   shilü
+dim-magenta = "#ea7293"    # magenta, fengxianhuahong
+dim-red = "#f03752"        # red,     haitanghong
+dim-white = "#c4cbcf"      # fg0,     dalishihui
+dim-yellow = "#fbb957"     # yellow,  mihuang
+
+# Light colors
+light-black = "#2b333e"      # bg0,      qinghui
+light-blue = "#1661ab"       # blue0,    dianqing
+light-cyan = "#1e9eb3"       # cyan0,    cuilan
+light-foreground = "#e4dfd7" # fg,       zhenzhuhui
+light-green = "#12aa9c"      # green0,   meidielü
+light-magenta = "#ee2c79"    # magenta0, zijinghong
+light-red = "#c21f30"        # red0,     fengyehong
+light-white = "#e4dfd7"      # fg,       zhenzhuhui
+light-yellow = "#806332"     # yellow0,  canghuang

@@ -1,0 +1,54 @@
+[colors]
+# Regular colors
+background = "#f8f4ed" # bg,      hanbaiyu
+black = "#f8f4ed"      # bg,      hanbaiyu
+blue = "#1661ab"       # blue,    dianqing
+cyan = "#1e9eb3"       # cyan,    cuilan
+foreground = "#2b333e" # fg,      qinghui
+green = "#12aa9c"      # green,   meidielü
+magenta = "#ee2c79"    # magenta, zijinghong
+red = "#c21f30"        # red,     fengyehong
+white = "#2b333e"      # fg,      qinghui
+yellow = "#806332"     # yellow,  canghuang
+
+# Cursor
+cursor = "#2b333e"    # fg, qinghui
+vi-cursor = "#2b333e" # fg, qinghui
+
+# Navigation
+tabs = "#47484c"         # fg0, waguanhui
+tabs-active = "#2b333e"  # fg,  qinghui
+split = "#47484c"        # fg0, waguanhui
+split-active = "#47484c" # fg0, waguanhui
+
+# Search
+search-match-background = "#51c4d3"         # cyan0, pubulan
+search-match-foreground = "#2b333e"         # fg,    qinghui
+search-focused-match-background = "#2b333e" # fg,    qinghui
+search-focused-match-foreground = "#f8f4ed" # bg,    hanbaiyu
+
+# Selection
+selection-background = "#e4dfd7" # bg0, zhenzhuhui
+selection-foreground = "#2b333e" # fg,  qinghui
+
+# Dim colors
+dim-black = "#f8f4ed"      # bg,      hanbaiyu
+dim-blue = "#1661ab"       # blue,    dianqing
+dim-cyan = "#1e9eb3"       # cyan,    cuilan
+dim-foreground = "#47484c" # fg0,     waguanhui
+dim-green = "#12aa9c"      # green,   meidielü
+dim-magenta = "#ee2c79"    # magenta, zijinghong
+dim-red = "#c21f30"        # red,     fengyehong
+dim-white = "#47484c"      # fg0,     waguanhui
+dim-yellow = "#806332"     # yellow,  canghuang
+
+# Light colors
+light-black = "#e4dfd7"      # bg0,      zhenzhuhui
+light-blue = "#66a9c9"       # blue0,    jianshilan
+light-cyan = "#51c4d3"       # cyan0,    pubulan
+light-foreground = "#2b333e" # fg,       qinghui
+light-green = "#57c3c2"      # green0,   shilü
+light-magenta = "#ea7293"    # magenta0, fengxianhuahong
+light-red = "#f03752"        # red0,     haitanghong
+light-white = "#2b333e"      # fg,       qinghui
+light-yellow = "#fbb957"     # yellow0,  mihuang

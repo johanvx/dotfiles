@@ -1,0 +1,73 @@
+confirm-before-quit = true
+draw-bold-text-with-light-colors = false
+env-vars = ["TERM=xterm-256color"]
+grapheme-clustering = true
+
+[platform]
+windows.shell = {
+    program = "C:\\Program Files\\Git\\bin\\bash.exe",
+    args = ["-l", "-c", "'cd ~ && exec bash'"]
+}
+
+[adaptive-theme]
+dark = "lettepa-dark"
+light = "lettepa-light"
+
+[cursor]
+shape = "block"
+blinking = false
+
+[bell]
+visual = true
+audio = false
+
+[developer]
+log-level = "OFF"
+enable-log-file = false
+
+[editor]
+program = "vim"
+args = []
+
+[effects]
+custom-mouse-cursor = false
+trail-cursor = false
+
+[fonts]
+size = 20
+hinting = true
+features = []
+use-drawable-chars = true
+symbol-map = []
+disable-warnings-not-found = false
+additional-dirs = []
+
+[fonts.regular]
+family = "Noto Sans Mono"
+style = "default"
+weight = 400
+
+[fonts.bold]
+family = "Noto Sans Mono"
+style = "default"
+weight = 700
+
+[fonts.italic]
+family = "Noto Sans Mono"
+style = "default"
+weight = 400
+
+[fonts.bold-italic]
+family = "Noto Sans Mono"
+style = "default"
+weight = 700
+
+[window]
+opacity = 0.6
+decorations = "transparent"
+blur = "macos-glass-regular"
+
+[bindings]
+keys = [
+  { key = "'", with = "control", action = "ToggleVIMode" },
+]
