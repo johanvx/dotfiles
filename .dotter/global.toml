@@ -34,7 +34,7 @@ rio = "~/.config/rio"
 
 [vim.files]
 "vim/.vimrc" = "~/.vimrc"
-"vim/.vim/colors/lettepa.vim" = "~/.vim/colors/lettepa.vim"
+"vim/.vim/colors" = "~/.vim/colors"
 
 [zellij.files]
 zellij = "~/.config/zellij"
