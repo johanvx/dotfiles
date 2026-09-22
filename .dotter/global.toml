@@ -23,6 +23,9 @@ ghostty = "~/.config/ghostty"
 [nvim.files]
 nvim = "~/.config/nvim"
 
+[rio.files]
+rio = "~/.config/rio"
+
 [tmux-remote.files]
 "tmux/remote.tmux.conf" = "~/.tmux.conf"
 

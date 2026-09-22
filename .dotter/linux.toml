@@ -1,10 +1,12 @@
 # packages = [
 #   "agentic",
 #   "alacritty",
+#   "bash",
 #   "eza",
 #   "fish",
 #   "ghostty",
 #   "nvim",
+#   "rio",
 #   "tmux-local",
 #   "vim",
 #   "zellij",

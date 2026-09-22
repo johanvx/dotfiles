@@ -1,3 +1,13 @@
+# packages = [
+#   "agentic",
+#   "alacritty",
+#   "bash",
+#   "nvim",
+#   "rio",
+#   "vim",
+#   "zellij",
+# ]
+
 [alacritty.files]
 alacritty = "~/AppData/Roaming/alacritty"
 
