@@ -14,6 +14,9 @@ alacritty = "~/AppData/Roaming/alacritty"
 [nvim.files]
 nvim = "~/AppData/Local/nvim"
 
+[rio.files]
+rio = "~/AppData/Local/rio"
+
 [vim.files]
 "vim/.vimrc" = "~/_vimrc"
 "vim/.vim/colors/lettepa.vim" = "~/vimfiles/colors/lettepa.vim"
