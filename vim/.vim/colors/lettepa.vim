@@ -118,7 +118,7 @@ call s:h('Number', s:blue)
 call s:h('Boolean', s:blue)
 call s:h('Float', s:blue)
 
-call s:h('Identifier', s:green)
+call s:h('Identifier', s:fg)
 call s:h('Function', s:green)
 
 call s:h('Statement', s:magenta)
@@ -177,9 +177,9 @@ call s:h('Directory', s:blue)
 call s:h('ErrorMsg', s:red, s:none, ['bold'])
 call s:h('WarningMsg', s:yellow, s:none, ['bold'])
 
-call s:h('IncSearch', s:none, s:none, ['reverse'])
+call s:h('IncSearch', s:none, s:none, ['reverse', 'bold'])
 call s:h('Search', s:fg, s:cyan0)
-call s:h('CurSearch', s:none, s:none, ['reverse'])
+call s:h('CurSearch', s:none, s:none, ['reverse', 'bold'])
 call s:h('QuickFixLine', s:fg, s:cyan0)
 
 call s:h('MoreMsg', s:fg, s:none, ['bold'])
@@ -209,7 +209,7 @@ call s:h('Conceal', s:fg0)
 call s:h('DiffAdd', s:green, s:bg0)
 call s:h('DiffChange', s:yellow, s:bg0)
 call s:h('DiffDelete', s:red, s:bg0)
-call s:h('DiffText', s:red, s:bg0, ['bold'])
+call s:h('DiffText', s:blue, s:bg0, ['bold'])
 call s:h('Added', s:green, s:bg0)
 call s:h('Changed', s:yellow, s:bg0)
 call s:h('Removed', s:red, s:bg0)
@@ -230,8 +230,9 @@ call s:h('PmenuExtraSel', s:bg, s:fg)
 call s:h('PmenuSbar', s:none, s:bg)
 call s:h('PmenuThumb', s:none, s:fg0)
 
-" Cursor  guifg=bg guibg=fg
-" lCursor guifg=bg guibg=fg
+call s:h('Cursor',  s:bg, s:fg)
+call s:h('lCursor', s:bg, s:fg)
+call s:h('CursorIM', s:bg, s:fg)
 
 call s:h('CursorColumn', s:none, s:bg0)
 call s:h('CursorLine', s:none, s:bg0)
@@ -240,7 +241,7 @@ call s:h('TabLine', s:fg0, s:bg0)
 call s:h('TabLineSel', s:fg, s:bg)
 call s:h('TabLineFill', s:none, s:bg0)
 
-call s:h('MatchParen', s:bg, s:fg, ['bold', 'reverse'])
+call s:h('MatchParen', s:magenta0, s:fg, ['bold', 'reverse'])
 
 call s:h('ToolbarLine', s:none, s:bg0)
 call s:h('ToolbarButton', s:bg, s:fg, ['bold'])
@@ -250,7 +251,6 @@ call s:h('ToolbarButton', s:bg, s:fg, ['bold'])
 " PopupNotification cleared
 " debugBreakpoint cleared
 " debugPC  cleared
-" CursorIM cleared
 
 " }}}
 
