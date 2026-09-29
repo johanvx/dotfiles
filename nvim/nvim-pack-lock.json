@@ -37,10 +37,6 @@
       "rev": "561751e839b99a4baca36b9d963166b66d2536a6",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
-    "minuet-ai.nvim": {
-      "rev": "3b0a4c5f97b7124d94302c608fbe01c0270d4fbe",
-      "src": "https://github.com/milanglacier/minuet-ai.nvim"
-    },
     "neogit": {
       "rev": "c51a1dc7e0e0f40c4c396a2b1ceaa44b44e96032",
       "src": "https://github.com/NeogitOrg/neogit"
