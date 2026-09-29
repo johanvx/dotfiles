@@ -29,7 +29,7 @@ require("plugins.lang.markdown")
 require("plugins.lang.rust")
 require("plugins.lang.typst")
 
-vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme lettepa")
 
 -- Automatically sync Neovim background with macOS appearance
 local globals = require("core.globals")
@@ -59,16 +59,8 @@ if globals.is_macos then
     end
   end
 
-  -- Optionally, auto-sync on colorscheme change
-  vim.api.nvim_create_autocmd("ColorScheme", {
-    group = vim.api.nvim_create_augroup(
-      "SetupBackgroundSyncWithOS",
-      { clear = true }
-    ),
-    pattern = "*",
-    callback = sync_with_os,
-  })
-
+  -- A background change reloads the colorscheme and fires ColorScheme.
+  -- Syncing there would undo manual toggles and can discard the active theme.
   sync_with_os(true)
 end
 

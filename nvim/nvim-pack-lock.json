@@ -9,10 +9,6 @@
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
-    "catppuccin": {
-      "rev": "79e2049a0fdf7ec840f8463fe1d962c94493196b",
-      "src": "https://github.com/catppuccin/nvim"
-    },
     "colorful-winsep.nvim": {
       "rev": "6134b5cd4a38990c7b720adc90973ed32f726179",
       "src": "https://github.com/nvim-zh/colorful-winsep.nvim"
@@ -28,6 +24,10 @@
     "img-clip.nvim": {
       "rev": "b6ddfb97b5600d99afe3452d707444afda658aca",
       "src": "https://github.com/HakonHarnes/img-clip.nvim"
+    },
+    "lettepa": {
+      "rev": "f71ec6ff97a68ded8ae0fe1992dffc8d472574a1",
+      "src": "https://github.com/lettepa/nvim"
     },
     "mason.nvim": {
       "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
