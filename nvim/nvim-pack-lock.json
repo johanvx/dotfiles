@@ -65,10 +65,6 @@
       "rev": "7f66bda8f60c97a5bf4b37e5b8acb0e829ae3c32",
       "src": "https://github.com/michaelrommel/nvim-silicon"
     },
-    "nvim-treesitter": {
-      "rev": "c9f9ed6c1892f629ea399f4ee7905f2686fa13f2",
-      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
-    },
     "oil.nvim": {
       "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
       "src": "https://github.com/stevearc/oil.nvim"

@@ -20,7 +20,6 @@ require("plugins.mini")
 require("plugins.completion")
 require("plugins.formatter")
 require("plugins.linter")
-require("plugins.treesitter")
 require("plugins.img-clip")
 require("plugins.snippets")
 
