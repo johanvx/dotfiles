@@ -18,5 +18,5 @@ nvim = "~/AppData/Local/nvim"
 rio = "~/AppData/Local/rio"
 
 [vim.files]
-"vim/.vimrc" = "~/_vimrc"
-"vim/.vim/colors" = "~/vimfiles/colors"
+"vim/vimrc" = "~/_vimrc"
+"vim/vim/colors" = "~/vimfiles/colors"
