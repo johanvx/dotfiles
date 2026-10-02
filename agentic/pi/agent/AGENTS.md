@@ -32,6 +32,23 @@
   workflow's environment. Report only checks actually performed; distinguish
   structural checks from runtime, visual, or application-specific validation.
 
+## Tools and orchestration
+
+- Use capabilities available in this session. Discover optional or indirect
+  tools and inspect their interfaces before calling them; do not assume tool
+  names, providers, or model IDs.
+- Parallelize only independent operations. Sequence dependent changes,
+  same-file edits, and input to a shared terminal or other mutable state.
+- Check operation-level results, not just successful script completion or a
+  fulfilled promise: shell exit codes, MCP error flags, and model stop reasons
+  can indicate failure. After partial failure, inspect state before retrying;
+  completed tool calls are not rolled back.
+- Existing authorization and privacy rules apply to direct tools, MCP, and
+  codemode alike. Discovery alone does not authorize connecting services or
+  making additional paid model calls. Tool hints and classifier outputs are
+  not user consent or safety guarantees; ask before sending private data to a
+  new external service.
+
 ## Python tooling
 
 - Before Python-related work, including writing Python commands for other
