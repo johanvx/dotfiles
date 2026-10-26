@@ -18,7 +18,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "fzf-lua": {
-      "rev": "ec1b98d3f5f44a1cff1f2c3832af2f09c3d806ca",
+      "rev": "5b88d6f0af7fcb41d4a8bb340bf70d7e3824ee9d",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "img-clip.nvim": {
@@ -26,7 +26,7 @@
       "src": "https://github.com/HakonHarnes/img-clip.nvim"
     },
     "lettepa": {
-      "rev": "f71ec6ff97a68ded8ae0fe1992dffc8d472574a1",
+      "rev": "45bcc453288772b8ba75e061468227ee72033d7b",
       "src": "https://github.com/lettepa/nvim"
     },
     "mason.nvim": {
@@ -34,11 +34,11 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "561751e839b99a4baca36b9d963166b66d2536a6",
+      "rev": "ed8683521996657ce774e5eec9d2f9b1b5ecef82",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neogit": {
-      "rev": "c51a1dc7e0e0f40c4c396a2b1ceaa44b44e96032",
+      "rev": "832a2db084ac25c2801fd73a3fab58f3c82ed2ec",
       "src": "https://github.com/NeogitOrg/neogit"
     },
     "numb.nvim": {
@@ -46,11 +46,11 @@
       "src": "https://github.com/nacro90/numb.nvim"
     },
     "nvim-lint": {
-      "rev": "3d55c8f67c6ae5c15e1042571e107c7a3d5c5f4e",
+      "rev": "f6230a5c06ba59e6059c14637f1dbe29a7978b9b",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "a9bb4d5f4276aa5cddc015faa3ecc5a7b5a26b14",
+      "rev": "77b7432d4770d23b277d37923e5a08a442d8bb07",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-scissors": {
@@ -62,7 +62,7 @@
       "src": "https://github.com/michaelrommel/nvim-silicon"
     },
     "oil.nvim": {
-      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
+      "rev": "d3733d933833a0e59b813ecec99341527adf0c28",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
@@ -70,7 +70,7 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "640a3ec6d538bad17c328be373c7cad0293d9589",
+      "rev": "8e8795368391036643b622875a6da6a51bcd33f4",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "rust.vim": {
@@ -78,7 +78,7 @@
       "src": "https://github.com/rust-lang/rust.vim"
     },
     "skim": {
-      "rev": "5ad4e355c20fc63045d859a4fac8fbcf3bd444c6",
+      "rev": "1ab47f6ba7f1bfc355273bbdd98d4b2056ef95a3",
       "src": "https://github.com/skim-rs/skim"
     },
     "typst-preview.nvim": {

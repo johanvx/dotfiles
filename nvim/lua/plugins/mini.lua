@@ -13,7 +13,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
     require("mini.comment").setup()
     require("mini.cursorword").setup()
     require("mini.icons").setup()
-    require("mini.jump2d").setup()
     require("mini.splitjoin").setup()
     require("mini.surround").setup()
 
