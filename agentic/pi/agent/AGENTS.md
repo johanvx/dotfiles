@@ -114,9 +114,13 @@ correct reason. Remove the temporary example after.
 
 # Git workflow
 
-Use the `commit-writer` skill, if available, to draft commit messages.
+Use the `commit-writing` skill, if available, to draft commit messages.
 It reads the current diff and produces a message following the
 conventions below.
+
+Use the `pr-writing` skill, if available, to draft or review pull/merge
+request titles and descriptions from actual changes. This is drafting
+only, not authorization to publish or update a PR/MR.
 
 Make sure you use `git mv` to move any files that are already checked into git.
 
@@ -130,6 +134,11 @@ the commit title.
 When you refer to types or very short code snippets, place them in
 backticks. When you have a full line of code or more than one line of
 code, put them in indented code blocks.
+
+# Skill development
+
+Use the `skill-development` skill, if available, when creating, reviewing,
+or improving skills, including their instructions, structure, and tests.
 
 # Documentation preferences
 
