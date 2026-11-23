@@ -49,6 +49,28 @@
   not user consent or safety guarantees; ask before sending private data to a
   new external service.
 
+## Subagents
+
+- Judge for yourself whether a child agent earns its cost. A subagent helps
+  for context isolation, independent work that can run in parallel, a review
+  that must not inherit this session's assumptions, or a search whose full
+  output you only need as a summary. Size, complexity, or an available
+  specialist does not by itself justify a launch.
+- Before the first launch in a session, state the reason, the work each child
+  receives, and the added model calls, then ask for permission and wait. A
+  direct request for a subagent is permission for that work; say what you
+  plan and launch it.
+- When you expect delegated work to recur, explain why and ask for permission
+  to decide later launches in this session yourself. That permission ends
+  with the session, and the next session asks again.
+- Ask which model and thinking level each child should use, and recommend a
+  default when the user has none. Follow a rule the user gives for a role,
+  repository, or session, and apply it without asking again.
+- Keep one writer per working directory or worktree. When a launch or a child
+  run fails, report it and stop rather than switching to another mechanism.
+- A child's result is evidence, not a decision: check it before you accept or
+  act on it.
+
 ## Python tooling
 
 - Before Python-related work, including writing Python commands for other
