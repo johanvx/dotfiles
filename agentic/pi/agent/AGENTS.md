@@ -48,6 +48,10 @@
   making additional paid model calls. Tool hints and classifier outputs are
   not user consent or safety guarantees; ask before sending private data to a
   new external service.
+- When testing a CLI with ad-hoc input in sub-agents, write the input to a temp
+  file in `tmp/` using the Write tool (not `cat`/`echo` with heredoc + `>`),
+  then pass it by path rather than piping. This avoids interactive permission
+  prompts.
 
 ## Subagents
 
@@ -81,6 +85,10 @@
   existing projects' toolchains and lockfiles unless the user requests a
   migration; do not silently rewrite their workflows. Follow explicit user
   choices of tooling.
+- For existing skill scripts that use only the Python standard library, once
+  `uv` is confirmed on `PATH`, running them directly with `python3` or
+  `uv run --no-project python3` is fine without creating a new virtual
+  environment.
 
 ## SESSION.md
 
@@ -164,6 +172,33 @@ or improving skills, including their instructions, structure, and tests.
 
 # Documentation preferences
 
+## Writing style and anti-AI-slop
+
+Apply these rules globally to all prose, reports, outlines, drafts, emails,
+comments, and documentation in both English and Chinese:
+
+- Write calm, direct engineering prose. State concrete mechanisms, numbers,
+  and trade-offs instead of rhetorical polish or motivational framing.
+- Ban inflated LLM clichés: *delve*, *tapestry*, *landscape*, *realm*,
+  *paradigm shift*, *groundbreaking*, *revolutionary*, *game-changing*,
+  *unprecedented*, *underscore*, *pivotal*, *foster*, *bolster*, *spearhead*,
+  *testament to*, *seamless(ly)*, unnecessary *leverage/utilize* (prefer
+  *use/apply*), and throat-clearing openers (*"Notably,"*, *"It is worth
+  noting that"*).
+- Ban structural AI-isms: repeated *"not X, but Y"* / *"X, not Y"* aphorisms,
+  advertising-style slogan wrap-ups (*"turns A into B"*), forced rhetorical
+  triads, business/colloquial metaphors in technical prose (*deliverable*,
+  *bookkeeping risk*, *pays the cost N times*, *machinery*), telegraphic verb
+  chains, and vacuous truisms.
+- Never sacrifice natural technical syntax, drop necessary qualifiers, or write
+  clipped aphorisms just to hit a short-sentence target.
+- In Chinese or bilingual documents, write idiomatic technical Chinese rather
+  than word-for-word English translationese, and keep both languages
+  semantically and numerically identical.
+- Before adopting a new technical term, check that it does not collide with
+  established domain vocabulary (e.g., *static/dynamic*, *implicit/explicit*,
+  *restart*, *lattice*). Keep one canonical term and acronym per concept.
+
 ## Documentation examples
 
 - Use realistic names for types and variables.
@@ -178,74 +213,24 @@ to add, support, or implement right away.
 
 ## Literate Programming
 
-Apply literate programming principles to make code self-documenting and
-maintainable across all languages:
+Apply literate programming to complex, multi-phase, or domain-heavy code (skip
+simple utilities, trivial wrappers, and obvious getters/setters):
 
-### Core Principles
-
-1. **Explain the Why, Not Just the What**: Focus on business logic, design
-   decisions, and reasoning rather than describing what the code obviously
+1. **Explain the Why, Not Just the What**: Document design decisions,
+   invariants, and edge cases rather than restating what the code obviously
    does.
-
-2. **Top-Down Narrative Flow**: Structure code to read like a story with clear
-   sections that build logically:
-
-   ```rust
-   // ==============================================================================
-   // Plugin Configuration Extraction
-   // ==============================================================================
-
-   // First, we extract plugin metadata from Cargo.toml to determine what files
-   // we need to build and where to put them.
-   ```
-
-3. **Inline Context**: Place explanatory comments immediately before relevant
-   code blocks, explaining the purpose and any important considerations:
+2. **Top-Down Narrative Flow**: Group sequential phases under clear section
+   headers that build logically.
+3. **Inline Context**: Place brief explanatory comments immediately before
+   non-obvious blocks:
 
    ```python
    # Convert timestamps to UTC for consistent comparison across time zones.
-   # This prevents edge cases where local time changes affect rebuild detection.
-   utc_timestamp = datetime.utcfromtimestamp(file_stat.st_mtime)
+   utc_timestamp = datetime.fromtimestamp(file_stat.st_mtime, tz=timezone.utc)
    ```
 
 4. **Avoid Over-Abstraction**: Prefer clear, well-documented inline code over
-   excessive function decomposition when logic is sequential and
-   context-dependent. Functions should serve genuine reusability, not just file
-   organization.
-
-5. **Self-Contained When Practical**: Reduce dependencies on external shared
-   utilities when the logic is straightforward enough to inline with good
-   documentation.
-
-### Implementation Benefits
-
-- **Maintainability**: Future developers can quickly understand both
-  implementation and design rationale
-- **Debugging**: When code fails, documentation helps identify which logical
-  step failed and why
-- **Knowledge Transfer**: Code serves as documentation of the problem domain,
-  not just the solution
-- **Reduced Cognitive Load**: Readers don't need to mentally reconstruct the
-  author's reasoning
-
-### When to Apply
-
-Use literate programming for:
-
-- Complex algorithms with multiple phases or decision points
-- Code implementing business logic rather than simple plumbing
-- Code where the "why" is not immediately obvious from the "what"
-- Integration points between systems where context matters
-
-Avoid over-documenting:
-
-- Simple utility functions where intent is clear from the signature
-- Trivial getters/setters or obvious wrapper code
-- Code that's primarily syntactic sugar over well-known patterns
-
-## Prefer temp files over pipes for sub-agent CLI testing
-
-When testing a CLI with ad-hoc input, write the input to a temp file in `tmp/`
-using the Write tool (not `cat`/`echo` with heredoc + `>`), then pass it by
-path rather than piping. This avoids interactive permission prompts in
-sub-agents.
+   fragmented single-use helpers when logic is sequential and
+   context-dependent.
+5. **Self-Contained When Practical**: Avoid unnecessary external shared
+   utilities when straightforward inline logic is clearer.
