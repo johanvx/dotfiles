@@ -32,6 +32,6 @@ foreground = #2b333e
 cursor-color = #2b333e
 cursor-text = #f8f4ed
 
-# Selection colors (background=Zhenzhuhui)
-selection-background = #e4dfd7
-selection-foreground = #2b333e
+# Selection colors (background=Qinghui, foreground=Hanbaiyu)
+selection-background = #2b333e
+selection-foreground = #f8f4ed

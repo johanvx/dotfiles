@@ -63,8 +63,8 @@ background = "#51c4d3" # cyan0
 foreground = "#2b333e" # fg
 
 [colors.selection]
-background = "#e4dfd7"  # bg0
-text = "CellForeground"
+background = "#2b333e" # fg
+text = "#f8f4ed"       # bg
 
 [colors.vi_mode_cursor]
 background = "CellForeground"

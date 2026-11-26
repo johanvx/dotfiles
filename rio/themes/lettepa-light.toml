@@ -28,8 +28,8 @@ search-focused-match-background = "#2b333e" # fg,    qinghui
 search-focused-match-foreground = "#f8f4ed" # bg,    hanbaiyu
 
 # Selection
-selection-background = "#e4dfd7" # bg0, zhenzhuhui
-selection-foreground = "#2b333e" # fg,  qinghui
+selection-background = "#2b333e" # fg, qinghui
+selection-foreground = "#f8f4ed" # bg, hanbaiyu
 
 # Dim colors
 dim-black = "#f8f4ed"      # bg,      hanbaiyu
