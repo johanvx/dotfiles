@@ -111,7 +111,6 @@ windows.shell = {
     program = "C:\\Program Files\\Git\\bin\\bash.exe",
     args = ["-l", "-c", "'cd ~ && exec bash'"]
 }
-macos.window.blur = "macos-glass-regular"
 macos.window.decorations = "Buttonless"
 
 [renderer]
@@ -129,8 +128,6 @@ rows = 25
 mode = "Windowed"
 quake-width-percentage = 1.0
 quake-height-percentage = 0.4
-opacity = 0.6
-blur = true
 decorations = "Transparent"
 macos-use-shadow = true
 windows-corner-preference = "Round"
